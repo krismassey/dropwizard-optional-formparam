@@ -1,13 +1,21 @@
 DropWizard Optional @FormParam
 =============================
 
-If you need the ability to wrap a @FormParam value within an Optional object. This should do the trick. 
+If you need the ability to wrap a @FormParam value within an Optional object. This bundle will add the required functionality.
 
 
-To configure your dropwizard server add:
+## Adding to your application
+
+### Default configuration
+If you're happy for the flash scope cookie to be created with the default configuration, add this to your Application
+class:
 
 ```java
-environment.jersey().getResourceConfig().getClasses().add(OptionalFormParamInjectableProvider.class);
+@Override
+public void initialize(Bootstrap<HyraxApplicationConfiguration> bootstrap) {
+        bootstrap.addBundle(new OptionalFormParamBundle());
+    }
+
 ```
 
 
