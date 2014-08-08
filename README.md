@@ -13,8 +13,8 @@ class:
 ```java
 @Override
 public void initialize(Bootstrap<HyraxApplicationConfiguration> bootstrap) {
-        bootstrap.addBundle(new OptionalFormParamBundle());
-    }
+    bootstrap.addBundle(new OptionalFormParamBundle());
+}
 
 ```
 
