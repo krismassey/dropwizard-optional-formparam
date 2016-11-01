@@ -1,6 +1,9 @@
 DropWizard Optional @FormParam
 =============================
 
+NOTE: This functionality was merged into DropWizard 0.7.X [PR -> https://github.com/dropwizard/dropwizard/pull/677]
+
+
 If you need the ability to wrap a @FormParam value within an Optional object. This bundle will add the required functionality.
 
 
